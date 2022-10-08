@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity22">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav"
+        app:menu="@menu/menu"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:fitsSystemWindows="true"
+        />
+
+    <ImageView
+        android:layout_width="378dp"
+        android:layout_height="173dp"
+        android:src="@drawable/capture"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/img_save"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skills"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HOBBIES"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LANGUAGE"
+            android:layout_margin="2dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <FrameLayout
+            android:id="@+id/flfrag"
+            android:name="tn.esprit.trying.fragskills"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>
